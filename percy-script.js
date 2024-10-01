@@ -14,6 +14,10 @@ const percySnapshot = require('@percy/playwright');
   });
 
   await page.goto('https://www.choctawcasinos.com/events/?locations=durant');
-  await percySnapshot(page, 'Durant Events - Default');
+  await percySnapshot(page, 'Durant Events');
+
+  // await page.goto('https://www.choctawcasinos.com/events/?when=202410&locations=durant&the_league=');
+  // await percySnapshot(page, 'Durant Events - October');
+
   await browser.close();
 })();

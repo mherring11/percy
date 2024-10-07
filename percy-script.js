@@ -13,11 +13,11 @@ const percySnapshot = require('@percy/playwright');
     return route.continue();
   });
 
-  await page.goto('https://www.choctawcasinos.com/events/?locations=durant');
+  await page.goto('https://www.choctawcasinos.com/events/?when=202410&locations=durant&the_league=');
   await percySnapshot(page, 'Durant Events');
 
-  // await page.goto('https://www.choctawcasinos.com/events/?when=202410&locations=durant&the_league=');
-  // await percySnapshot(page, 'Durant Events - October');
+  // await page.goto('https://www.choctawcasinos.com/events/?when=202411&locations=durant&the_league=');
+  // await percySnapshot(page, 'Durant Events - November);
 
   await browser.close();
 })();
